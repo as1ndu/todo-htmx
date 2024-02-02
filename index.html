@@ -19,7 +19,8 @@
 
                 <label><b>ITEMS:</b> </label>
                 <input name="list_item" type="text" placeholder="What do you want to do ?" size="25">
-                <button hx-indicator="#indicator" hx-target="#list-items" hx-swap="afterbegin" hx-get="/add-items/populate-list" hx-include="#form-data">Add</button>
+                <button hx-indicator="#indicator" hx-target="#list-items" hx-swap="afterbegin"
+                    hx-get="/add-items/populate-list" hx-include="#form-data">Add</button>
 
                 <p id="indicator" class="htmx-indicator">
                     <small>
@@ -29,11 +30,11 @@
 
             </form>
             <ol id="list-items">
-                <!-- <li id="abx"><p><span><small class="finished-btn" hx-delete="/add-items/delete" hx-target="#abx" hx-swap="outerHTML">👍 Finish.</small></p></span> Have Break fast. </li>
-                <hr/>
-                <li><span><small class="finished-btn">👍 finish</small></span> Charge phone. </li>
-                <li><span><small class="finished-btn">👍 finish</small></span> Call bae. </li>
-                <li><span><small class="finished-btn">👍 finish</small></span> Watch Saw X. </li> -->
+                <p id="remove-indicator" class="remove-htmx-indicator">
+                    <small>
+                        Removing item from list ...
+                    </small>
+                </p>
             </ol>
         </section>
     </main>
