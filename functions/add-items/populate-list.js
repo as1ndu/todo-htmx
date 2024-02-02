@@ -15,8 +15,8 @@ export async function onRequest(context) {
   var list_item = url.searchParams.get('list_item');
 
   var list_item_html = `
-  <span id="${list_rn}">
-  <li><p><span><small class="finished-btn" hx-delete="/add-items/delete" hx-target="#${list_rn}" hx-swap="outerHTML">👍 Finish.</small></p></span> ${list_item}. </li>
+  <span id="abx">
+  <li><p><span><small class="finished-btn" hx-delete="/add-items/delete" hx-target="#abx" hx-swap="outerHTML">👍 Finish.</small></p></span> ${list_item}. </li>
   <hr/>
   </span>
     `;
