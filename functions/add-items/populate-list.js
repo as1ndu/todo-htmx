@@ -30,7 +30,11 @@ export async function onRequest(context) {
   </svg>
 `
   var list_item_html = `
-  <span id="${list_rn}">
+  <span id="${list_rn}"
+  hx-trigger="load"
+  hx-get="/add-items/replace-input"
+  hx-swap="outerHTML"
+  hx-target="#input-form">
   <li><p><span><small class="finished-btn" hx-indicator="#remove-indicator" hx-delete="/add-items/delete" hx-target="#${list_rn}" hx-swap="outerHTML">${svg_icon} Finish.</small></p></span> ${list_item}. </li>
   <hr/>
   </span>

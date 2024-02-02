@@ -18,9 +18,16 @@
             <form id="form-data">
 
                 <label><b>ITEMS:</b> </label>
-                <input name="list_item" type="text" placeholder="What do you want to do ?" size="25">
-                <button hx-indicator="#indicator" hx-target="#list-items" hx-swap="afterbegin"
-                    hx-get="/add-items/populate-list" hx-include="#form-data">Add</button>
+                <input id="input-form" name="list_item" type="text" placeholder="What do you want to do ?" size="25">
+
+                <button
+                hx-indicator="#indicator"
+                hx-target="#list-items"
+                hx-swap="afterbegin"
+                hx-get="/add-items/populate-list"
+                hx-include="#form-data">
+                Add
+                </button>
 
                 <p id="indicator" class="htmx-indicator">
                     <small>
