@@ -1,14 +1,5 @@
 export async function onRequest(context) {
 
-  var csrng_api = 'https://csprng.xyz/v1/api';
-
-  var rn = await fetch(csrng_api, {})
-    .then(response => response.json())
-    .then(data => data['Data'])
-    .catch(error => error);
-
-  var list_rn = rn.substring(0, 8);
-
   var url_string = context.request.url
   var url = new URL(url_string);
 
