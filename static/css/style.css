@@ -17,8 +17,7 @@ section {
 
 .finished-btn {
     background-color: coral;
-    padding: 3px;
-    border-radius: 5px;
+    padding: 6px;
     color: aliceblue;
 }
 
@@ -88,5 +87,5 @@ padding: 8px;
 }
 
 hr {
-    color: aliceblue;
+    color: #f0f8ff;
 }
