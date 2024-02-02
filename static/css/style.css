@@ -1,6 +1,6 @@
 #application-heading {
     margin: auto;
-    width: 60%;
+    width: 95%;
     text-transform: uppercase;
     color: coral;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -9,7 +9,7 @@
 
 section {
     margin: auto;
-    width: 60%;
+    width: 91%;
     border: 3px solid #77719876;
     padding: 12px;
     background-color: burlywood;
