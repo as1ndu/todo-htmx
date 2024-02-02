@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/htmx.min.js"></script>
+    <meta name="description" content="Todo List With HTMX">
+    <title>Todo List With HTMX</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="application-heading">Todo List With HTMX.</h1>
+        <section>
+            <h3>List of things.</h3>
+            <form id="form-data">
+
+                <label><b>ITEMS:</b> </label>
+                <input name="list_item" type="text" placeholder="What do you want to do ?" size="25">
+                <button hx-indicator="#indicator" hx-target="#list-items" hx-swap="afterbegin" hx-get="/add-items/populate-list" hx-include="#form-data">Add</button>
+
+                <p id="indicator" class="htmx-indicator">
+                    <small>
+                        Adding item to list ...
+                    </small>
+                </p>
+
+            </form>
+            <ol id="list-items">
+                <!-- <li id="abx"><p><span><small class="finished-btn" hx-delete="/add-items/delete" hx-target="#abx" hx-swap="outerHTML">👍 Finish.</small></p></span> Have Break fast. </li>
+                <hr/>
+                <li><span><small class="finished-btn">👍 finish</small></span> Charge phone. </li>
+                <li><span><small class="finished-btn">👍 finish</small></span> Call bae. </li>
+                <li><span><small class="finished-btn">👍 finish</small></span> Watch Saw X. </li> -->
+            </ol>
+        </section>
+    </main>
+
+</body>
+
+</html>
